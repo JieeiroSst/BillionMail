@@ -103,7 +103,8 @@
 			"sequences": "Sequences",
 			"leads": "Leads",
 			"enrichment": "Enrichment",
-			"videoOutreach": "ビデオアウトリーチ"
+			"videoOutreach": "ビデオアウトリーチ",
+			"notification": "通知"
 		}
 	},
 	"login": {
@@ -1522,6 +1523,36 @@
 		},
 		"search": {
 			"placeholder": "詳細/IPを入力して検索"
+		}
+	},
+	"notification": {
+		"actions": { "add": "通知を作成" },
+		"search": { "titlePlaceholder": "タイトルで検索" },
+		"empty": "通知タスクはまだありません",
+		"columns": {
+			"title": "タイトル",
+			"targetCount": "対象数",
+			"sentCount": "送信済み",
+			"failedCount": "失敗",
+			"status": "状態",
+			"createTime": "作成日時"
+		},
+		"status": { "pending": "保留中", "running": "実行中", "completed": "完了" },
+		"loading": { "creating": "作成中です、しばらくお待ちください..." },
+		"form": {
+			"title": "一括通知を作成",
+			"notifyTitle": "通知タイトル",
+			"notifyTitlePlaceholder": "通知タイトルを入力してください",
+			"message": "メッセージ",
+			"messagePlaceholder": "通知メッセージを入力してください",
+			"targets": "対象リスト",
+			"targetsPlaceholder": "1行に1つのデバイストークン/受信者識別子",
+			"threads": "並列数",
+			"validation": {
+				"titleRequired": "通知タイトルを入力してください",
+				"messageRequired": "メッセージを入力してください",
+				"targetsRequired": "対象を1つ以上入力してください"
+			}
 		}
 	}
 }

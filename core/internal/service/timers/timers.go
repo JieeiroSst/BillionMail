@@ -12,6 +12,7 @@ import (
 	"billionmail-core/internal/service/mail_service"
 	"billionmail-core/internal/service/maillog_stat"
 	"billionmail-core/internal/service/multi_ip_domain"
+	"billionmail-core/internal/service/notification"
 	"billionmail-core/internal/service/relay"
 	"billionmail-core/internal/service/video_gen"
 	"billionmail-core/internal/service/warmup"
@@ -103,6 +104,11 @@ func Start(ctx context.Context) (err error) {
 	gtimer.Add(10*time.Minute, func() {
 		batch_mail.CleanupIdleExecutors()
 		g.Log().Debug(ctx, "Idle task executors cleanup completed")
+	})
+
+	// Batch mobile notification task processing
+	gtimer.Add(5*time.Second, func() {
+		notification.ProcessBatchTasks(ctx)
 	})
 
 	// Test the smtp relay configuration connection status

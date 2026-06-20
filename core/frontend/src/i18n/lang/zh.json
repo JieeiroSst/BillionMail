@@ -112,7 +112,8 @@
 			"sequences": "Sequences",
 			"leads": "Leads",
 			"enrichment": "Enrichment",
-			"videoOutreach": "视频外联"
+			"videoOutreach": "视频外联",
+			"notification": "通知"
 		}
 	},
 	"login": {
@@ -1598,5 +1599,35 @@
 	"enrichment": {
 		"scraper": { "title": "Scraper Configuration", "query": "Search Query", "queryPlaceholder": "e.g. dentist, plumber", "location": "Location", "maxResults": "Max Results", "start": "Start Scraping" },
 		"pipeline": { "title": "Pipeline Status", "scraped": "Scraped", "enriching": "Enriching", "personalized": "Personalized", "queued": "Queued" }
+	},
+	"notification": {
+		"actions": { "add": "新建通知" },
+		"search": { "titlePlaceholder": "按标题搜索" },
+		"empty": "暂无通知任务",
+		"columns": {
+			"title": "标题",
+			"targetCount": "目标数",
+			"sentCount": "已发送",
+			"failedCount": "失败数",
+			"status": "状态",
+			"createTime": "创建时间"
+		},
+		"status": { "pending": "待处理", "running": "进行中", "completed": "已完成" },
+		"loading": { "creating": "正在创建，请稍候..." },
+		"form": {
+			"title": "创建批量通知",
+			"notifyTitle": "通知标题",
+			"notifyTitlePlaceholder": "请输入通知标题",
+			"message": "通知内容",
+			"messagePlaceholder": "请输入通知内容",
+			"targets": "目标列表",
+			"targetsPlaceholder": "每行一个设备令牌/接收者标识",
+			"threads": "并发数",
+			"validation": {
+				"titleRequired": "请输入通知标题",
+				"messageRequired": "请输入通知内容",
+				"targetsRequired": "请输入至少一个目标"
+			}
+		}
 	}
 }

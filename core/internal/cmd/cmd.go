@@ -15,6 +15,7 @@ import (
 	"billionmail-core/internal/controller/mail_boxes"
 	"billionmail-core/internal/controller/mail_services"
 	"billionmail-core/internal/controller/middleware"
+	"billionmail-core/internal/controller/notification"
 	"billionmail-core/internal/controller/operation_log"
 	"billionmail-core/internal/controller/overview"
 	"billionmail-core/internal/controller/rbac"
@@ -326,6 +327,7 @@ var (
 					abnormal_recipient.NewV1(),
 					languages.NewV1(),
 					mail_services.NewV1(),
+					notification.NewV1(),
 					relay.NewV1(),
 					settings.NewV1(),
 					subscribe_list.NewV1(),

@@ -112,7 +112,8 @@
 			"sequences": "Sequences",
 			"leads": "Leads",
 			"enrichment": "Enrichment",
-			"videoOutreach": "Video Outreach"
+			"videoOutreach": "Video Outreach",
+			"notification": "Notification"
 		}
 	},
 	"login": {
@@ -1654,6 +1655,36 @@
 			"enriching": "Enriching",
 			"personalized": "Personalized",
 			"queued": "Queued"
+		}
+	},
+	"notification": {
+		"actions": { "add": "Create Notification" },
+		"search": { "titlePlaceholder": "Search by title" },
+		"empty": "No notification tasks yet",
+		"columns": {
+			"title": "Title",
+			"targetCount": "Targets",
+			"sentCount": "Sent",
+			"failedCount": "Failed",
+			"status": "Status",
+			"createTime": "Created At"
+		},
+		"status": { "pending": "Pending", "running": "Running", "completed": "Completed" },
+		"loading": { "creating": "Creating, please wait..." },
+		"form": {
+			"title": "Create Batch Notification",
+			"notifyTitle": "Notification Title",
+			"notifyTitlePlaceholder": "Please enter the notification title",
+			"message": "Message",
+			"messagePlaceholder": "Please enter the notification message",
+			"targets": "Targets",
+			"targetsPlaceholder": "One device token / recipient identifier per line",
+			"threads": "Concurrent Workers",
+			"validation": {
+				"titleRequired": "Please enter a notification title",
+				"messageRequired": "Please enter a message",
+				"targetsRequired": "Please enter at least one target"
+			}
 		}
 	}
 }

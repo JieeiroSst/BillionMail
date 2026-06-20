@@ -18,6 +18,7 @@ const routesReflectList = [
 	'Settings',
 	'Automation',
 	'Video Outreach',
+	'Notification',
 ]
 
 // Import routes from modules
